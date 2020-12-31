@@ -1,0 +1,22 @@
+main {
+  background-color: var(--backgroundAndText);
+  height: 68vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .recentPosts .Posts {
+  widht: 900px;
+  height: 100px;
+}
+
+main .recentPosts .Posts img {
+  object-fit: cover;
+}
+
+footer {
+  height: 10vh;
+}

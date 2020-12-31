@@ -15,8 +15,9 @@ function homePage(req: Request, res: Response) {
   return res.render("index.html");
 }
 
-server.get("/", homePage);
-
-server.listen(PORT, () => {
-  console.log(`listening port ${PORT}`);
-});
+server
+  .use(express.static("public"))
+  .get("/", homePage)
+  .listen(PORT, () => {
+    console.log(`listening port ${PORT}`);
+  });

@@ -3,11 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <title>Titulo aqui / Title here</title>
-    <link rel="stylesheet" href="./src/styles/main.css" />
-    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/master.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
   </head>
+
   <body>
-    <h1>Hello world!</h1>
-    <script src="./index.js"></script>
+    <header>
+      <img
+        class="headerBanner"
+        src="assets/BannerImage.jpg"
+        alt="header banner"
+      />
+      <img
+        class="headerProfileImage"
+        src="assets/profileImage.jpg"
+        width="128"
+        height="128"
+        alt="headerProfileImage"
+      />
+      <h3 class="headerName" alt="Mad's blog">Mad's blog</h3>
+      <h3 class="headerFlippedName" alt="flipped Mad's blog">Mad's blog</h3>
+      <div class="headerHamburgerMenu"></div>
+    </header>
+    <main>
+      <div id="container">
+        <div class="recentPosts">
+          <div class="Posts">
+            <img src="assets/postImage.jpg" alt="Image of post" />
+            <p class="postDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
+              amet aliquam quam. Fusce id dui risus. Donec laoreet posuere quam
+              quis congue. Quisque mi metus, ornare et accumsan id, convallis ut
+              tortor. Mauris sed diam eu enim scelerisque tincidunt eu ut neque.
+              Ut euismod dolor sit amet iaculis congue. Nulla eleifend, sapien
+              eget tincidunt iaculis, erat felis sollicitudin massa, eget
+              pulvinar tortor orci ut lectus. Etiam dapibus feugiat enim at
+              aliquam. In luctus sapien dui, eget vehicula velit finibus nec.
+              Maecenas quis dolor hendrerit, scelerisque nunc eu, suscipit erat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Made with ❤️ by axel</footer>
   </body>
 </html>

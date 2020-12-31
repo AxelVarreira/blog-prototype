@@ -1,0 +1,25 @@
+:root {
+  --backgroundAndText: #00303b;
+  --buttons: #ff7777;
+  --shadows: #ffce96;
+  --dialogbox: #f1f2da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+header,
+main,
+footer,
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+#container {
+  max-width: 900px;
+}
