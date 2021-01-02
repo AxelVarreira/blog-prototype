@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/master.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/post.css" />
     <link rel="stylesheet" href="styles/header.css" />
   </head>
 
@@ -20,37 +20,61 @@
         src="assets/BannerImage.jpg"
         alt="header banner"
       />
-      <img
-        class="headerProfileImage"
-        src="assets/profileImage.jpg"
-        width="128"
-        height="128"
-        alt="headerProfileImage"
-      />
-      <h3 class="headerName" alt="Mad's blog">Mad's blog</h3>
-      <h3 class="headerFlippedName" alt="flipped Mad's blog">Mad's blog</h3>
-      <div class="headerHamburgerMenu"></div>
-    </header>
-    <main>
       <div id="container">
-        <div class="recentPosts">
-          <div class="Posts">
-            <img src="assets/postImage.jpg" alt="Image of post" />
-            <p class="postDescription">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
-              amet aliquam quam. Fusce id dui risus. Donec laoreet posuere quam
-              quis congue. Quisque mi metus, ornare et accumsan id, convallis ut
-              tortor. Mauris sed diam eu enim scelerisque tincidunt eu ut neque.
-              Ut euismod dolor sit amet iaculis congue. Nulla eleifend, sapien
-              eget tincidunt iaculis, erat felis sollicitudin massa, eget
-              pulvinar tortor orci ut lectus. Etiam dapibus feugiat enim at
-              aliquam. In luctus sapien dui, eget vehicula velit finibus nec.
-              Maecenas quis dolor hendrerit, scelerisque nunc eu, suscipit erat.
-            </p>
-          </div>
+        <img
+          class="headerProfileImage"
+          src="assets/profileImage.jpg"
+          width="128"
+          height="128"
+          alt="headerProfileImage"
+        />
+        <h3 class="headerName" alt="Mad's blog">Mad's blog</h3>
+        <h3 class="headerFlippedName" alt="flipped Mad's blog">Mad's blog</h3>
+        <div class="headerHamburgerMenu"></div>
+      </div>
+    </header>
+    <div id="container">
+      <h3 style="color: #f1f2da">Recent posts</h3>
+      <div class="postCarrousel">
+        <div class="card">
+          <a href="#">
+            <h1 class="postTitle">Titulo 1</h1>
+            <h5 class="postDescription">
+              <time datetime="2021-1-1 10:14">2021-1-1 10:14</time>
+            </h5>
+          </a>
         </div>
       </div>
-    </main>
+      <h3 style="color: #f1f2da">Older posts</h3>
+      <div class="postOld">
+        <div class="card">
+          <a href="#">
+            <h1 class="postTitle">Titulo 1</h1>
+            <h5 class="postDescription">
+              <time datetime="2021-1-1 10:14">2021-1-1 10:14</time>
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+              massa in libero commodo ultrices vel id est. Sed dignissim neque
+              diam, at finibus justo euismod non. Maecenas tincidunt nisi ut
+              diam faucibus, eget sagittis tortor dapibus. Etiam euismod massa
+              nisl, ut congue elit gravida vehicula. Donec semper sagittis
+              varius. Phasellus justo ex, pellentesque luctus imperdiet quis,
+              consectetur eget quam. Ut euismod nibh nec dictum porttitor. Nulla
+              sed massa a arcu auctor tristique. Etiam vitae tellus at justo
+              molestie venenatis nec eget justo. In fringilla ac augue sed
+              rhoncus. Donec ultrices sollicitudin sodales. Nulla facilisi.
+              Vestibulum ac ligula augue.
+            </h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <footer>Made with ❤️ by axel</footer>
+
+    <script
+      type="text/javascript "
+      src="../../dist/script/hamburguerMenu.js"
+    ></script>
   </body>
 </html>

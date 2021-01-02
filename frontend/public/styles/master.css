@@ -1,8 +1,8 @@
 :root {
-  --backgroundAndText: #00303b;
-  --buttons: #ff7777;
-  --shadows: #ffce96;
-  --dialogbox: #f1f2da;
+  --first: #00303b;
+  --second: #ff7777;
+  --third: #ffce96;
+  --fourth: #f1f2da;
 }
 
 * {
@@ -20,6 +20,25 @@ input {
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  background-color: var(--first);
+}
+
+a {
+  color: var(--fourth);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underlin;
+}
+
 #container {
   max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,6 +3,7 @@ header {
   height: 191px;
   position: relative;
   display: flex;
+  margin-bottom: 30px;
 }
 
 header .headerBanner {

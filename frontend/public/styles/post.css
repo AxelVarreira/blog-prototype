@@ -1,0 +1,55 @@
+.card {
+  margin: 20px 15px;
+  padding: 30px;
+  height: 280px;
+  width: 680px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  border-radius: 16px;
+  background-color: var(--second);
+
+  transition: ease-in-out 0.5s;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../assets/postImage.jpg");
+}
+
+.postCarrousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postCarrousel .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postOld {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease-in-out 0.5s;
+}
+
+footer {
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  bottom: 0;
+  background-color: var(--third);
+}
