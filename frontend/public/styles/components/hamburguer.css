@@ -1,7 +1,7 @@
 header .headerMenuWrapper {
   width: 100%;
-  height: 100%;
-  right: 100px;
+  height: 100vh;
+  /* right: 100px; */
 }
 
 header .headerMenuWrapper .headerNavbar {
@@ -9,22 +9,23 @@ header .headerMenuWrapper .headerNavbar {
   height: 100%;
 
   position: fixed;
-  right: -480px;
+  left: -100;
   top: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* border-radius: 20% 0 0 60%; */
-  transform: skewX(-10deg);
+  border-radius: 0% 20% 60% 0%;
+  /* transform: skewX(-10deg); */
 
   background-color: var(--second);
+
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
-header .change {
-  transition: ease-in-out 0.5s;
-  left: 2100px;
+.change {
+  left: 0%;
 }
 
 header .headerHamburguerMenu {
@@ -33,8 +34,8 @@ header .headerHamburguerMenu {
 
   position: fixed;
 
-  top: 50px;
-  right: 600px;
+  top: 250px;
+  left: 80px;
 
   cursor: pointer;
 
@@ -44,7 +45,7 @@ header .headerHamburguerMenu {
 }
 
 header .headerHamburguerMenu .line {
-  background-color: white;
+  background-color: var(--fourth);
 
   width: 100%;
   height: 3px;
@@ -65,6 +66,8 @@ header .headerHamburguerMenu .line {
 }
 
 header .headerMenuWrapper .headerNavbar .navList {
+  position: absolute;
+  left: 90px;
   text-align: right;
 }
 

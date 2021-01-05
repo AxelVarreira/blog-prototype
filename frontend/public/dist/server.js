@@ -11,6 +11,10 @@ _nunjucks2.default.configure("src/views", {
   noCache: true,
 });
 
+function aboutPage(req, res) {
+  return res.render("about.html");
+}
+
 function homePage(req, res) {
   return res.render("index.html");
 }
@@ -18,6 +22,7 @@ function homePage(req, res) {
 server
   .use(_express2.default.static("public"))
   .get("/", homePage)
+  .get("/about", aboutPage)
   .listen(PORT, () => {
     console.log(`listening port ${PORT}`);
   });
